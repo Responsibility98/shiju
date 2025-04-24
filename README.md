@@ -7,3 +7,7 @@ mvn install:install-file -Dfile="C:\Users\yan10\Downloads\jnativehook-2.2.0.jar"
 
 # 打 exe 文件
 将jar打成exe 使用 launch4j , https://launch4j.sourceforge.net/
+
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)

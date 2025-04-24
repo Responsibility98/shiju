@@ -74,10 +74,10 @@ public class RegionCaptureOCR extends JWindow {
             Tesseract tess = new Tesseract();
 
             // 优先读取环境变量
-            String tessdataPath = System.getenv("TESSDATA_PREFIX");
-            if (tessdataPath == null || tessdataPath.isEmpty()) {
-                tessdataPath = "./Tesseract-OCR/tessdata";
-            }
+            String tessdataPath = "./Tesseract-OCR/tessdata";
+
+
+
             tess.setDatapath(tessdataPath);
             tess.setLanguage("chi_sim");
 

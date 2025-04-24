@@ -18,7 +18,7 @@ public class Main {
             GlobalScreen.addNativeKeyListener(new NativeKeyAdapter() {
                 @Override
                 public void nativeKeyPressed(NativeKeyEvent e) {
-                    // Ctrl + Shift + S：开启截图
+                    // 检测 Ctrl + Shift + S 组合键
                     if ((e.getModifiers() & NativeKeyEvent.CTRL_MASK) != 0
                             && (e.getModifiers() & NativeKeyEvent.SHIFT_MASK) != 0
                             && e.getKeyCode() == NativeKeyEvent.VC_S) {
