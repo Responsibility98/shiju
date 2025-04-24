@@ -76,7 +76,7 @@ public class RegionCaptureOCR extends JWindow {
             // 优先读取环境变量
             String tessdataPath = System.getenv("TESSDATA_PREFIX");
             if (tessdataPath == null || tessdataPath.isEmpty()) {
-                tessdataPath = "C:/Program Files/Tesseract-OCR/tessdata";
+                tessdataPath = "./Tesseract-OCR/tessdata";
             }
             tess.setDatapath(tessdataPath);
             tess.setLanguage("chi_sim");
@@ -89,12 +89,5 @@ public class RegionCaptureOCR extends JWindow {
             ex.printStackTrace();
             JOptionPane.showMessageDialog(null, "识别失败：" + ex.getMessage());
         }
-    }
-
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            RegionCaptureOCR capture = new RegionCaptureOCR();
-            capture.setVisible(true);
-        });
     }
 }
